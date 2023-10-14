@@ -111,3 +111,4 @@ const person2 = {
   
   // Вызываем метод greet объекта person
   person2.greet(); // Выведет: Привет, меня зовут undefined
+  
