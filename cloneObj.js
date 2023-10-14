@@ -23,8 +23,13 @@ const user = {
     age: 30,
     gender: "male",
     interests:'Музыка, MMA',
+    role: {
+        isAdmin: false,
+        isManager: true,
+    }
 }
 
+const person = {...user}
 
 
 
