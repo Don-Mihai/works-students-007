@@ -1,39 +1,38 @@
-// const makeCalculator = () => {
+// const makeCalculation = (operator, text, secondText = 'Введите второе число') => {
+//     const firstNum = prompt(text ? text : 'Введите первое число');
+//     const secondNum = prompt(secondText);
+
+//     let result;
+//     if (operator === '+') {
+//         result = +firstNum + +secondNum;
+//     }
+
+//     if (operator === '-') {
+//         result = +firstNum - +secondNum;
+//     }
+
+//     return result
 
 // }
 
-// let example = 'example';
+// const result =  makeCalculation('-', 'Веди пожаааалуйста первое число')
 
-// const foo = () => {
+// console.log(result)
+// alert(result)
 
-//     let example = 'localExample'
-//     second = 'test'
-//     const boo = () => {
-//         console.log("boo")
 
-//         example = 'automaticTest'
-//         const faa = () => {
-//             console.log("faa")
-//         };
 
-//         faa()
-//     };
-
-//     boo()
-// };
-
-// foo()
-
-// console.log(example)
-
-let a = "a"
+let a = 'a'
 
 const foo = () => {
+
     let a = 'b'
 
     console.log(a)
+
 }
 
+console.log(a)
+
+
 foo()
-
-
