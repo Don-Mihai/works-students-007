@@ -53,3 +53,28 @@
 //   product.category === "fruits" ? true : false
 // );
 // console.log(filteredArr);
+// function positiveSum(arr) {
+//   let positiveArr = arr.filter((item) => (item > 0 ? true : false));
+
+//   let result = 0;
+
+//   positiveArr.forEach((item) => {
+//     result += item;
+//   });
+//   return result;
+// }
+// const arr = [1, 2, 3, 4, 5];
+
+// const result = arr.reduce((result, item) => {
+//   return result + item;
+// }, 0);
+// console.log(result);
+// -----------
+
+// const arr = [1, 2, 3];
+
+// arr.push(4);
+
+// arr.pop();
+
+// console.log(arr);
