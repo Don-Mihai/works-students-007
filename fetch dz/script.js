@@ -1,5 +1,6 @@
 // const getData = async () => { 
-//     let isLoading = truetry {
+//     let isLoading = true
+//     try {
 //         const data = await fetch("https://reqres.in/api/users?per_page=12")
 //         const procData = await data.json()
 
@@ -45,21 +46,23 @@ fetch('https://reqres.in/api/users?per_page=12')
     console.log('-----------');
     console.log('Пункт №2:')
     console.log('-----------');
-    body.data.forEach(element => {
+    const users = body.data
+
+    users.forEach(element => {
         console.log(element.last_name)
     });
  
     console.log('-----------');
     console.log('Пункт №3:')
     console.log('-----------');
-    body.data.filter(item=>item.last_name.startsWith('F')).forEach(element => {
-        console.log( element.avatar , element.email , element.first_name , element.id , element.last_name , )
-    });
+    const filteredArr = users.filter(item=>item.last_name.startsWith('F'))
+
+    console.log(filteredArr)
 
     console.log('-----------');
     console.log('Пункт №4:')
     console.log('-----------');
-    console.log(body.data.reduce((acc, item)=>acc + item.first_name + " " + item.last_name +', ', "Наша база содержит данные следующих пользователей: "));
+    console.log(users.reduce((acc, item)=>acc + item.first_name + " " + item.last_name +', ', "Наша база содержит данные следующих пользователей: "));
     
     console.log('-----------');
     console.log('Пункт №5:')
