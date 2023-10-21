@@ -7,26 +7,34 @@ async function getUsersData() {
         console.log(data)
 
         console.log('-----------');
-        console.log('Вывести фамилии всех пользователей в цикле:');
-        console.log('-----------');
-
         // Пункт 2: Вывести фамилии всех пользователей в цикле
-        for (const user of users) {
-            console.log(user.last_name);
-        }
 
+        // const arr = []
+        // for (const user of users) {
+        //     arr.push(user.last_name)
+        // }
+
+        const arr = users.map((user) => user.last_name)
+
+
+        console.log('Вывести фамилии всех пользователей в цикле:', arr);
         console.log('-----------');
-        console.log('Вывести все данные пользователей, фамилия которых начинается с "F":');
-        console.log('-----------');
+
+
+       
 
         // Пункт 3: Вывести все данные пользователей, фамилия которых начинается с "F"
-        for (const user of users) {
-            if (user.last_name.startsWith('F')) {
-                console.log(user);
-            }
-        }
+        // for (const user of users) {
+        //     if (user.last_name.startsWith('F')) {
+        //         console.log(user);
+        //     }
+        // }
 
+        const filteredArr = users.filter((user) => user.last_name.startsWith('F') ? true : false )
+
+        console.log('Вывести все данные пользователей, фамилия которых начинается с "F":', filteredArr);
         console.log('-----------');
+
         console.log('Вывести имена и фамилии всех пользователей с использованием метода reduce');
         console.log('-----------');
 
