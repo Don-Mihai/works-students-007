@@ -8,20 +8,21 @@ async function fetchData() {
 
     const data = await response.json();
     const users = data.data;
+
+    const arr = users.map((user) => user.last_name);
+
+    console.log("Фамилии всех пользователей:", arr);
     console.log("--------------------");
 
-    console.log("Фамилии всех пользователей:");
-    for (const user of users) {
-      console.log(user.last_name);
-    }
-    console.log("--------------------");
+    const filteredArr = users.filter((user) =>
+      user.last_name.starsWith("F" ? true : false)
+    );
 
-    console.log("Данные пользователей с фамилией, начинающейся на 'F':");
-    for (const user of users) {
-      if (user.last_name.charAt(0).toLowerCase() === "f") {
-        console.log(user);
-      }
-    }
+    console.log(
+      "Данные пользователей с фамилией, начинающейся на 'F':",
+      filteredArr
+    );
+
     console.log("--------------------");
 
     const sentence =
@@ -30,6 +31,7 @@ async function fetchData() {
         return acc + user.first_name + " " + user.last_name + ", ";
       }, "");
     console.log(sentence.slice(0, -2));
+    //
     console.log("--------------------");
 
     console.log("Названия всех ключей в объекте пользователя:");
