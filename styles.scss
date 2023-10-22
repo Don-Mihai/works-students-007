@@ -9,7 +9,7 @@
         top: 0px;
         right: 5px;
     }
-    
+
     &__info {
         border: 1px solid #9d9d9d;
         background-color: #f0f0f0;
@@ -27,7 +27,7 @@
         color: #3c763d;
         background-color: #dff0d8;
     }
-  }
+}
 
 .hideModal {
     animation: hideModal 5s;
@@ -66,4 +66,13 @@
     to {
         opacity: 0;
     }
+}
+
+
+.section {
+    height: 100vh;
+    background-color: #d3d1d129;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
