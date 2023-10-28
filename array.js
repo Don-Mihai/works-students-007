@@ -4,7 +4,6 @@
 //     console.log(`${numbers[i]} ${i + 1}`)
 // }
 
-
 // console.log(numbers)
 
 // --------------1-- forEach--------------
@@ -75,3 +74,19 @@
 // arr.pop()
 
 // console.log(arr)
+// let msg = "susususus";
+// for (i = 0; i < 3; i++) {
+//   let = result = msg;
+//   console.log(result);
+// }
+// let go = "jopa suka siska";
+// for (i = 0; i < 3; i++) {
+//   let = result = go;
+//   console.log(result);
+// }
+
+// let num = 10;
+// do {
+//   console.log(num);
+//   ++num;
+// } while (num <= 10);
