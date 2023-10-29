@@ -4,7 +4,6 @@
 //     console.log(`${numbers[i]} ${i + 1}`)
 // }
 
-
 // console.log(numbers)
 
 // --------------1-- forEach--------------
@@ -75,3 +74,40 @@
 // arr.pop()
 
 // console.log(arr)
+// function countDown(number) {
+//   // вывод в консоль
+//   console.log(number);
+
+//   // уменьшаем значение на один
+//   const newNumber = number - 1;
+
+//   // условие выхода
+//   if (newNumber > 0) {
+//     countDown(newNumber);
+//   }
+// }
+
+// countDown(4);
+
+// let number = 4;
+// while (number >= 0) {
+//   console.log(number);
+//   number--;
+// }
+
+// const obj = {
+//   value: 3,
+//   next: {
+//     value: 5,
+//     next: {
+//       value: 2,
+//       next: null,
+//     },
+//   },
+// };
+
+// function getArray(obj) {
+//   return obj ? [obj.value, ...getArray(obj.next)] : [];
+// }
+
+// console.log(getArray(obj));
